@@ -32,7 +32,7 @@ app.post("/new-entry", function(req, res){
     }
     entries.push({
         title:req.body.title,
-        content:req.body.body,
+        body:req.body.body,
         published:new Date()
     });
     res.redirect("/");
