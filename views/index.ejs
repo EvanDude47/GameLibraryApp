@@ -1,16 +1,16 @@
 <% include header %>
 
-<% if(entries.length){ %>
-    <% entries.forEach(function(entry){ %>
+<% if(games.length){ %>
+    <% games.forEach(function(game){ %>
     <div class="panel panel-default">
         <div class="panel-heading">
             <div class="text-muted pull-right">
-               <%= entry.published %>
+               <%= game.published %>
             </div>
-            <%= entry.title %>
+            <%= game.title %>
         </div>
         <div class="panel-body">
-            <%= entry.body %>
+            <%= game.body %>
         </div>
     </div>
     <% }) %>
